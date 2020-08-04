@@ -5,140 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kira Peters' Home Page</title>
 
+    <link rel="stylesheet" type="text/css" href="homepage_style.css">
     <style>
-        .wrapper {
-            margin: auto;
-            width: 60%;
-            border: 3px solid #00ace6;
-            padding: 10px;
-        }
-
-        h1 {
-            text-align:center;
-        }
-
-        h2 {
-            font-family:Georgia, 'Times New Roman', Times, serif;
-        }
-
-        p {
-            width: 90%;
-            margin: auto;
-            text-align: left;
-            padding: 1em;
-
-        }
-
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        td, th {
-            border: 1px solid #dddddd;
-            /* text-align: left; */
-            padding: 8px;
-        }
-
-        tr:nth-child(even) {
-            background-color: #dddddd;
-        }
-
         .quote {
-            margin-left: auto;
-            margin-right: auto;
-            width: 60%;
-            background-color: #c9f9b9;
-            padding: 10px;
-            text-align: center;
-
+            clear: both;
         }
+        
 
     </style>
-
-
 </head>
 
-<body class="wrapper">
-    <h1 style="font-family: Georgia, 'Times New Roman', Times">Welcome to Kira Peters' Home Page!</h1>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 id="top">Kira Peters</h1>
+            <hr>
+        </header>
 
-    <img src="images/pic_of_me.jpg" alt="A picture of me" style="width:338px;height:338px;" class="img-space">
+        <main>
+            <div id="about-me">
+                <!-- Picture of Me -->
+                <img src="../pics/me.jpg" alt="A picture of me" style="width:338px;height:338px;" class="img-space">
+                <!-- Elevator Pitch -->
+                <p>I go to school at Brigham Young University - Idaho and I am the Vice President of SWE 
+                    (description when hovering: Society of Women’s Engineers club). 
+                    I am majoring in Software Engineering and I am interested in becoming a front-end developer.
+                    Currently I am looking for an internship to start in January 2021 either remotely or on site.
+                </p>
 
-    <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">I am a Software 
-        Engineering student studying at BYU-Idaho. I am from Ridgecrest, CA.
-        I work as a Computer Science TA for CSE101 and CS165. With a background interest 
-        in design and presentation, I have taken an interest in the front end aspect 
-        of software design. 
-    </p>
+                <!-- Quote -->
+                <div class="quote">
+                    <blockquote cite="hhttps://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng">
+                        "By small and simple things are great things come to pass" (Alma 37:6)
+                    </blockquote>
+                    <p>
+                        It is often the small things that
+                        add up and make a huge difference. Small things are very
+                        important in programming. If one small thing is out of place, then the whole 
+                        program could collaspe!
+                    </p>
+                </div>
 
-    <div class="quote">
-        <p>
-            I am a big advocate that <strong>small things</strong> matter. It is often the small things that
-            add up and make a huge different in someone's life. Small things are also very
-            important in programming. If one small thing is out of place, then the whole 
-            program could collaspe (or blow up!)
-        </p>
+                <h2>About Me</h2>
+                <h3>Home life</h3>
+                <p id="self-intro">
+                    <!-- Home life -->
+                    I am from the small city of Ridgcrest, CA, located in the middle of the Mojave desert next to a Naval Air Base.
+                    I love hanging out with my small family of 4. We've adopted 3 fluffy pets that like to run around and sleep inside and outside.
+                    I like to keep myself busy by coding, crafting, practicing piano, cooking, cleaning, and playing videogames.
+                </p>
+                <h3>School Life</h3>
+                <p>
+                    <!-- School Life -->
+                    I am studying Software Engineering at BYU-Idaho.
+                    While at school I have worked as a Computer Science TA for Programming Building Blocks in Python and Object Oriented Programming in C++. 
+                    With a background interest 
+                    in art and design, I have taken an interest in the front end aspect 
+                    of software design.
+                </p>
+                <!-- Todo: Include table with list of relevant courses -->
 
-        <blockquote cite="hhttps://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng">
-            "By small and simple things are great things come to pass" (Alma 37:6)
-        </blockquote>
+                <p style="text-align: center;text-decoration: none;"><a href="www.linkedin.com/in/kira-peters01">LinkedIn Page</a> | <a href="https://portfolium.com/KiraPeters1">Portfolium</a></p>
+            </div> 
+            <h2>Class Schedule for </h2>
+            <table id="schedule">
+                <tr>
+                    <th>Course #</th>
+                    <th>Course Name</th>
+                    <th>Course Description</th>
+                    <th>Completed</th>
+                </tr>
+                <tr>
+                    <td>CS 213</td>
+                    <td>Web Engineering</td>
+                    <td>Learn effective website design and various webtechnologies focusing on client-side web development</td>
+                    <td>July 2020</td>
+                </tr>
+                <tr>
+                    <td>CIT 225</td>
+                    <td>Database Design & Development</td>
+                    <td>Learn the concepts and principles of database theory, application, and management technologies using SQL to query and transact against a sample database.</td>
+                    <td>July 2020</td>
+                </tr>
+                <tr>
+                    <td>CS 235</td>
+                    <td>Data Structures</td>
+                    <td>Implemented in a high-level language, C++, the basic data structure of lists, trees, and graphs. Learned about basic algorithms and time complexity.</td>
+                    <td>December 2019</td>
+                </tr>
+                <tr>
+                    <td>CS 165</td>
+                    <td>Object Oriented Programming</td>
+                    <td>Learned how to design and implement object-oriented programs. Also learned about the principles of inheritance, polymorphism, and encapsulation.</td>
+                    <td>April 2019</td>
+                </tr>
+                <tr>
+                    <td>CS 364</td>
+                    <td>Software Engineering</td>
+                    <td>In this class I learned how to: apply engineering principles to software development; to work well with others; to select an appropriate approach to elicit, document, and review requirements; select an appropriate approach for documenting and reviewing a design.</td>
+                    <td>April 2020</td>
+                </tr>
+            </table>
+
+        </main>
     </div>
-
-    <h2>Class Schedule</h2>
-
-    <table style="font-family: Arial">
-        <tr>
-            <th>Course #</th>
-            <th>Course Description</th>
-            <th>Sec #</th>
-            <th>Class Time</th>
-            <th>Class Location</th>
-        </tr>
-        <tr>
-            <td>CS 213</td>
-            <td>Web Engineering</td>
-            <td>04</td>
-            <td>Online</td>
-            <td>Online</td>
-        </tr>
-        <tr>
-            <td>CIT 225</td>
-            <td>Database Design & Development</td>
-            <td>02</td>
-            <td>TR 9:45-11:15</td>
-            <td>Remote</td>
-        </tr>
-        <tr>
-            <td>BUS 301</td>
-            <td>Advanced Writing in Pro Contexts</td>
-            <td>02</td>
-            <td>M 8:00-9:30</td>
-            <td>Remote/Online</td>
-        </tr>
-        <tr>
-            <td>REL 275</td>
-            <td>Teachings of Book of Mormon</td>
-            <td>29</td>
-            <td>MW 2:00-3:00</td>
-            <td>Remote</td>
-        </tr>
-    </table>
-
-
-
 
     <hr>
 
-    <p>To see the assignments that I have completed for Web Engineering please click this link: 
-        <a href="../index.html">CS213 Assignments</a>
-    </p>
+    <footer>
+        <p><a href="#top">Back to Top</a> | <a href="../index.html">Complete List of Assignments</a></p>
 
+        <p id="sopyright">
+            Copyright &copy; 2017, Kira Peters. All rights reserved.
+        </p>
+    </footer>
 </body>
 
 </html>
