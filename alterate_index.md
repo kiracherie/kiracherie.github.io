@@ -5,10 +5,10 @@ I look pretty good
 ## Header 2
 I like to code, craft, cook, clean... what other things do I like that starts with c?
 
-Here is a piece of code that I found
+Here is a piece of code that I wrote
 `let x = fun`
 
-Here is a block of code that I found
+Here is a block of code that I wrote
 ```
 x = 3
 y = 2
@@ -24,4 +24,5 @@ Things that I love:
 * art
 * family
 * friends
+
 In no particular order
