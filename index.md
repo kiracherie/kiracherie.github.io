@@ -1,27 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kira Peters's Assignments</title>
-</head>
-<body>
-    <h1>CS 213 Assignments</h1>
+# Header 1
+Inserting a picture
+![A picture of me](/images/pic_of_me.jpg)
+I look pretty good
+## Header 2
+I like to code, craft, cook, clean... what other things do I like that starts with c?
 
-    <ul style="text-align: center; list-style-position: inside;">
-        <li><a href="./week01/assign01.html">Week 01</a></li>
-        <li><a href="./week02/assign02.html">Week 02</a></li>
-        <li><a href="./week03/assign03.html">Week 03</a></li>
-        <li><a href="./week04/assign04.html">Week 04</a></li>
-        <li><a href="./week05/assign05.html">Week 05</a></li>
-        <li><a href="./week06/assign06.html">Week 06</a></li>
-        <li><a href="./week07/assign07.html">Week 07</a></li>
-        <li><a href="./week08/assign08.html">Week 08</a></li>
-        <li><a href="./week09/assign09.html">Week 09</a></li>
-        <li><a href="./week10/assign10.html">Week 10</a></li>
-        <li><a href="./week11/assign11.html">Week 11</a></li>
-        <li><a href="./week12/assign12.html">Week 12</a></li>
-        <li><a href="./week13/assign13.html">Week 13</a></li>
-    </ul>
-</body>
-</html>
+Here is a piece of code that I found
+`let x = fun`
+
+Here is a block of code that I found
+```
+x = 3
+y = 2
+
+result = x + y
+print(result)
+```
+That one is in python
+### Header 3
+Things that I love:
+* cats
+* Studio Ghibli
+* art
+* family
+* friends
+In no particular order
