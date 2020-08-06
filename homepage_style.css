@@ -259,7 +259,7 @@ input[type=button], input[type=submit], input[type=reset] {
 /* ---------- Footer ----------- */
 footer {
     padding: none;
-    background-color: #e5f9ff;
+    background-color: rgb(222,235,251);
 }
 
 footer p {
