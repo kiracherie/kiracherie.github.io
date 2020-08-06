@@ -4,13 +4,17 @@
 }
 
 body {
-    background-image: url(../pics/repeating_background.jpg);
+    background-image: url(/images/repeating_background.jpg);
+}
+
+main {
+    margin-top: 1em;
 }
 
 .wrapper {
     margin: auto;
     width: 60%;
-    border: 3px solid #00ace6;
+    border: 5px solid #00ace6;
     padding: 10px;
     background-color: white;
 }
@@ -19,7 +23,7 @@ hr {
     color:  #00ace6;
     background-color: #00ace6;
     border-width: 0;
-    height: 3px;
+    height: 5px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -38,9 +42,69 @@ p {
 img {
     display: block;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; 
+    max-width: 99%; /*cannot be centered if width is 100%*/
 }
 
+/* Links *********************/
+
+a:link {
+    text-decoration: none;
+    color: #00ace6;
+}
+a:visited {
+    color: #e65c00;
+}
+a:hover {
+    color: #ffd1b3;
+    cursor: pointer;
+}
+
+/* Header ************************/
+header {
+    /* text-shadow: 2px 2px #ffe0cc; */
+    text-align: center;
+}
+header h1 {
+    color: #e65c00;
+    margin-bottom: 0px;
+    font-size: 2.5em;
+}
+header p {
+    text-align: center;
+    padding-top: .3em
+}
+
+/* Top Navigation *********************/
+.topnav {
+    overflow: hidden;
+    background-color: rgb(222,235,251);
+    text-shadow: none;
+    border: solid 5px #00ace6;
+    border-radius: 15px;
+  }
+  
+.topnav a {
+    float: left;
+    color: #00ace6;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #00ace6;
+    color: white;
+}
+.topnav a.active {
+    background-color: #00ace6;
+    color: white;
+}
+.topnav a:visited {
+    background-color: #00ace6;
+}
+
+/* Table *************************/
 table {
     font-family: Arial;
     border-collapse: collapse;
@@ -54,9 +118,19 @@ td, th {
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #ffe0cc;
 }
 
+tr:hover {
+    background-color: #ffc299;
+}
+
+th {
+    background-color: #e65c00;
+    color: white;
+}
+
+/* Interactive Quote ***********************/
 .quote {
     margin-left: auto;
     margin-right: auto;
@@ -64,30 +138,32 @@ tr:nth-child(even) {
     background-color: #ffe0cc;
     padding: 10px;
     text-align: center;
+    border-radius: 15px;
 }
-
-header {
-    text-shadow: 2px 2px #ffe0cc;
-    text-align: center;
-}
-header h1 {
-    color: #e65c00;
-}
-
-/* -------- Links -------- */
-
-a:link {
-    text-decoration: none;
-    color: #00ace6;
-}
-
-a:visited {
-    color: #e65c00;
-}
-
-a:hover {
-    color: #ffd1b3;
+.accordion {
+    margin: none;
+    background-color: #ffe0cc;
+    color: #444;
     cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-radius: 15px;
+}
+.active, .accordion:hover {
+    background-color: #ffc299; 
+}
+.panel {
+    padding: 0 18px;
+    background-color: #ffe0cc;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: max-height 0.2s ease-out;
 }
 
 /* ----------- Form style ---------- */

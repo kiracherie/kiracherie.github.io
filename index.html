@@ -6,20 +6,20 @@
     <title>Kira Peters' Home Page</title>
 
     <link rel="stylesheet" type="text/css" href="homepage_style.css">
-    <style>
-        .quote {
-            clear: both;
-        }
-        
-
-    </style>
+    
 </head>
 
 <body>
     <div class="wrapper">
         <header>
             <h1 id="top">Kira Peters</h1>
-            <hr>
+            <p>Aspiring Front-End Developer</p>
+            <div class="topnav">
+                <a href="http://kiracherie.github.io" class="active">Home</a>
+                <a href="#resume">Resume</a>
+                <a href="#about">About</a>
+                <a href="#fun_stuff">Fun Stuff</a>
+            </div>
         </header>
 
         <main>
@@ -35,15 +35,17 @@
 
                 <!-- Quote -->
                 <div class="quote">
-                    <blockquote cite="hhttps://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng">
+                    <button class="accordion" cite="hhttps://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng">
                         "By small and simple things are great things come to pass" (Alma 37:6)
-                    </blockquote>
-                    <p>
-                        It is often the small things that
-                        add up and make a huge difference. Small things are very
-                        important in programming. If one small thing is out of place, then the whole 
-                        program could collaspe!
-                    </p>
+                    </button>
+                    <div class="panel">
+                        <p>
+                            It is often the small things that
+                            add up and make a huge difference. Small things are very
+                            important in programming. If one small thing is out of place, then the whole 
+                            program could collaspe!
+                        </p>
+                    </div>
                 </div>
 
                 <h2>About Me</h2>
@@ -65,9 +67,9 @@
                 </p>
                 <!-- Todo: Include table with list of relevant courses -->
 
-                <p style="text-align: center;text-decoration: none;"><a href="www.linkedin.com/in/kira-peters01">LinkedIn Page</a> | <a href="https://portfolium.com/KiraPeters1">Portfolium</a></p>
+                <p style="text-align: center;text-decoration: none;"><a href="https://www.linkedin.com/in/kira-peters01/">LinkedIn Page</a> | <a href="https://portfolium.com/KiraPeters1">Portfolium</a></p>
             </div> 
-            <h2>Class Schedule for </h2>
+            <h2>Relevant Course Work</h2>
             <table id="schedule">
                 <tr>
                     <th>Course #</th>
@@ -79,31 +81,31 @@
                     <td>CS 213</td>
                     <td>Web Engineering</td>
                     <td>Learn effective website design and various webtechnologies focusing on client-side web development</td>
-                    <td>July 2020</td>
+                    <td>Jul 2020</td>
                 </tr>
                 <tr>
                     <td>CIT 225</td>
                     <td>Database Design & Development</td>
                     <td>Learn the concepts and principles of database theory, application, and management technologies using SQL to query and transact against a sample database.</td>
-                    <td>July 2020</td>
+                    <td>Jul 2020</td>
                 </tr>
                 <tr>
                     <td>CS 235</td>
                     <td>Data Structures</td>
                     <td>Implemented in a high-level language, C++, the basic data structure of lists, trees, and graphs. Learned about basic algorithms and time complexity.</td>
-                    <td>December 2019</td>
+                    <td>Dec 2019</td>
                 </tr>
                 <tr>
                     <td>CS 165</td>
                     <td>Object Oriented Programming</td>
                     <td>Learned how to design and implement object-oriented programs. Also learned about the principles of inheritance, polymorphism, and encapsulation.</td>
-                    <td>April 2019</td>
+                    <td>Apr 2019</td>
                 </tr>
                 <tr>
                     <td>CS 364</td>
                     <td>Software Engineering</td>
                     <td>In this class I learned how to: apply engineering principles to software development; to work well with others; to select an appropriate approach to elicit, document, and review requirements; select an appropriate approach for documenting and reviewing a design.</td>
-                    <td>April 2020</td>
+                    <td>Apr 2020</td>
                 </tr>
             </table>
 
@@ -113,12 +115,29 @@
     <hr>
 
     <footer>
-        <p><a href="#top">Back to Top</a> | <a href="../index.html">Complete List of Assignments</a></p>
+        <p><a href="#top">Back to Top</a></p>
 
         <p id="sopyright">
             Copyright &copy; 2017, Kira Peters. All rights reserved.
         </p>
     </footer>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+                } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
