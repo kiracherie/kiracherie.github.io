@@ -14,20 +14,26 @@
         <header>
             <h1 id="top">Kira Peters</h1>
             <p>Aspiring Front-End Developer</p>
-            <div class="topnav">
+            <div class="topnav" id="myTopnav">
                 <a href="http://kiracherie.github.io" class="active">Home</a>
                 <a href="#resume">Resume</a>
                 <a href="#about-me">About</a>
                 <a href="#fun_stuff">Fun Stuff</a>
                 <a class="float-right" href="https://portfolium.com/KiraPeters1">Portfolium</a>
                 <a class="float-right" href="https://www.linkedin.com/in/kira-peters01/">LinkedIn</a>
+                <a id="nav_icon" onclick="addResponsive()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                
             </div>
         </header>
 
         <main>
             <div id="about-me">
                 <!-- Picture of Me -->
-                <img src="images/pic_of_me.jpg" alt="A picture of me" style="width:338px;height:338px;" class="img-space">
+                <img src="images/pic_of_me.jpg" alt="A picture of me" class="img-space">
                 <!-- Elevator Pitch -->
                 <p>I go to school at Brigham Young University - Idaho and I am the Vice President of 
                     <span class="tooltip">SWE<span class="tooltiptext">Society of Women’s Engineers Club</span></span>.
@@ -117,7 +123,8 @@
     <footer>
         <p><a href="#top">Back to Top</a></p>
 
-        <p id="sopyright">
+        <p id="copyright">
+            760-793-1446 | <a href="mailto:kirapeters@gmail.com">kirapeters@gmail.com</a> | <a href="https://www.linkedin.com/in/kira-peters01/">LinkedIn</a><br>
             Copyright &copy; 2017, Kira Peters. All rights reserved.
         </p>
     </footer>
@@ -136,6 +143,15 @@
                 panel.style.maxHeight = panel.scrollHeight + "px";
                 }
             });
+        }
+        function addResponsive() {
+            console.log("adding responsive class\n")
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
         }
     </script>
 </body>
