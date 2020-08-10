@@ -159,11 +159,19 @@ button {
     color: white;
     border-radius: 15px;
     padding: .5em 1em;
-    font-size: 1.2em;
 }
 button:hover {
     cursor: pointer;
     background-color: #ffb380;
+}
+#resume button {
+    margin-top: 1em;
+    font-size: 1.2em;
+}
+.button-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Tooltip ****************************/
