@@ -166,42 +166,6 @@ button:hover {
     background-color: #ffb380;
 }
 
-/* Interactive Quote ***********************/
-.quote {
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    background-color: #ffe0cc;
-    padding: 10px;
-    text-align: center;
-    border-radius: 15px;
-}
-.accordion {
-    margin: none;
-    background-color: #ffe0cc;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    font-size: 1em;
-    text-align: center;
-    outline: none;
-    transition: 0.4s;
-    border-radius: 15px;
-}
-.active, .accordion:hover {
-    background-color: #ffc299; 
-}
-.panel {
-    padding: 0 18px;
-    background-color: #ffe0cc;
-    max-height: 0;
-    overflow: hidden;
-    border-radius: 15px;
-    transition: max-height 0.2s ease-out;
-}
-
 /* Tooltip ****************************/
 .tooltip {
     position: relative;
@@ -287,6 +251,47 @@ input[type=button], input[type=submit], input[type=reset] {
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+/* Interactive Quote ***********************/
+.quote {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    background-color: #ffe0cc;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+}
+.accordion {
+    margin: none;
+    background-color: #ffe0cc;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    font-size: 1em;
+    text-align: center;
+    outline: none;
+    transition: 0.4s;
+    border-radius: 15px;
+}
+.active, .accordion:hover {
+    background-color: #ffc299; 
+}
+.panel {
+    padding: 0 18px;
+    background-color: #ffe0cc;
+    max-height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: max-height 0.2s ease-out;
+}
+
+/* Resume ****************************/
+#resume ul {
+    margin-top: 0px;
 }
 
 /* Footer ****************************/
