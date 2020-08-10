@@ -148,6 +148,24 @@ th {
     color: white;
 }
 
+/* Lists ************************************/
+ul {
+    list-style-position: inside;
+}
+
+/* Button **********************************/
+button {
+    background-color: #e65c00;
+    color: white;
+    border-radius: 15px;
+    padding: .5em 1em;
+    font-size: 1.2em;
+}
+button:hover {
+    cursor: pointer;
+    background-color: #ffb380;
+}
+
 /* Interactive Quote ***********************/
 .quote {
     margin-left: auto;
@@ -221,7 +239,7 @@ th {
     visibility: visible;
   }
 
-/* ----------- Form style ---------- */
+/* Form style **************************/
 input {
 	border: solid 1px #00ace6;
 	border-radius: 4px;
@@ -271,7 +289,7 @@ input[type=button], input[type=submit], input[type=reset] {
   cursor: pointer;
 }
 
-/* ---------- Footer ----------- */
+/* Footer ****************************/
 footer {
     padding: none;
     background-color: rgb(222,235,251);
@@ -306,15 +324,10 @@ footer p {
 @media screen and (max-width: 930px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a#nav_icon {
-        float: right;
+        /* float: right; */
         display: inline-block;
     }
     .topnav.responsive {position: relative;}
-    /* .topnav.responsive .nav_icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    } */
     .topnav.responsive a {
       float: none;
       display: block;
