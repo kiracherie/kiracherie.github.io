@@ -45,7 +45,7 @@ img {
 
 /* Links *********************/
 
-a:link {
+a:link, ul a:link {
     text-decoration: none;
     color: #00ace6;
 }
