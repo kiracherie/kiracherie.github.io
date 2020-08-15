@@ -12,22 +12,34 @@
 
     <script>
         $(function(){
-            $('header').load('reusable/header.html');
+            // $('header').load('reusable/header.html');
             $('footer').load('reusable/footer.html');
         });
   </script>
     
 </head>
 
-<body>
+<body id="index_page">
     <div class="wrapper">
-        <header></header>
-
+        <header>
+            <h1 id="top">Kira Peters</h1>
+            <p>Aspiring Front-End Developer</p>
+            <div class="button_links">
+                <a href="index.html" class="active"><button class="button-center">Home</button></a>
+                <a href="resume.html"><button class="button-center">Resume</button></a>
+                <a href="about.html"><button class="button-center">About</button class="button-center"></a>
+                <a class="float-right" href="https://portfolium.com/KiraPeters1"><button class="button-center">Portfolium</button></a>
+                <a class="float-right" href="https://github.com/kiracherie"><button class="button-center">GitHub</button></a>
+                <a class="float-right" href="https://www.linkedin.com/in/kira-peters01/"><button class="button-center">LinkedIn</button></a>
+            </div>
+        </header>
+        <hr>
         <main>
             <div id="about-me">
                 <!-- Picture of Me -->
-                <img src="images/pic_of_me.jpg" alt="A picture of me" class="img-space">
+                <!-- <img src="images/pic_of_me.jpg" alt="A picture of me" class="img-space"> -->
                 <!-- Elevator Pitch -->
+                <h2 style="text-align: center;">Hello!</h2>
                 <p>I go to school at Brigham Young University - Idaho and I am the Vice President of 
                     <span class="tooltip">SWE<span class="tooltiptext">Society of Women’s Engineers Club</span></span>.
                     I am majoring in Software Engineering and I am interested in becoming a front-end developer.
