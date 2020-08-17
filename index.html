@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Kira Peters' Home Page</title>
 
     <link rel="stylesheet" type="text/css" href="homepage_style.css">
@@ -12,22 +13,40 @@
 
     <script>
         $(function(){
-            $('header').load('reusable/header.html');
+            // $('header').load('reusable/header.html');
             $('footer').load('reusable/footer.html');
         });
   </script>
     
 </head>
 
-<body>
+<body id="homepage">
+    <header>
+        <div id="top-button-wrapper">
+            <div id="top-buttons">
+                <a href="index.html" class="float-left">Home</a>
+                <a href="resume.html" class="float-right">Resume</a>
+                <a href="about.html" class="float-right" style="margin-right: 1em;">About</a>
+            </div>
+        </div>
+        <h1 id="top">Kira Peters</h1>
+        <p>Aspiring Front-End Developer</p>
+        
+        <div class="button_links">
+            <a href="https://github.com/kiracherie"><button>GitHub</button></a>
+            <a href="https://www.linkedin.com/in/kira-peters01/"><button>LinkedIn</button></a>
+            <a class="float-right" href="https://portfolium.com/KiraPeters1"><button>Portfolium</button></a>        
+        </div>
+    </header>
+
     <div class="wrapper">
-        <header></header>
 
         <main>
             <div id="about-me">
                 <!-- Picture of Me -->
-                <img src="images/pic_of_me.jpg" alt="A picture of me" class="img-space">
+                <!-- <img src="images/pic_of_me.jpg" alt="A picture of me" class="img-space"> -->
                 <!-- Elevator Pitch -->
+                <h1>In Short...</h1>
                 <p>I go to school at Brigham Young University - Idaho and I am the Vice President of 
                     <span class="tooltip">SWE<span class="tooltiptext">Society of Women’s Engineers Club</span></span>.
                     I am majoring in Software Engineering and I am interested in becoming a front-end developer.

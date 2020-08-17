@@ -1,16 +1,17 @@
 * {
     color: #002733;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
-main {
-    margin-top: 1em;
+body {
+    margin: 0px;
 }
 
 .wrapper {
     margin: auto;
     width: 90%;
-    border: 5px solid #00ace6;
+    border-left: 5px dotted #00ace6;
+    border-right: 5px dotted #00ace6;
     padding: 1em;
     background-color: white;
 }
@@ -22,8 +23,25 @@ hr {
     height: 5px;
 }
 
+header h1 {
+    font-family: 'Lobster Two', Georgia, 'Times New Roman', Times, serif;
+    background-image: linear-gradient(180deg, #ffe0cc, #e65c00);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    filter: drop-shadow(3px 3px #662900);
+    font-size: 5em;
+    font-weight: 700;
+    text-align: center;
+    margin-top: .2em;
+    margin-bottom: .1em;
+}
+
 h1, h2, h3, h4, h5 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Lobster Two', Georgia, 'Times New Roman', Times, serif;
     color: #e65c00;
 }
 
@@ -58,16 +76,8 @@ a:hover {
 }
 
 /* Header ************************/
-header {
-    /* text-shadow: 2px 2px #ffe0cc; */
-    text-align: center;
-}
-header h1 {
-    color: #e65c00;
-    margin-bottom: 0px;
-    font-size: 2.5em;
-}
 header p {
+    position: relative;
     text-align: center;
     padding-top: .3em
 }
@@ -159,6 +169,7 @@ button {
     color: white;
     border-radius: 15px;
     padding: .5em 1em;
+    font-weight: 700;
 }
 button:hover {
     cursor: pointer;
@@ -211,56 +222,6 @@ button:hover {
     visibility: visible;
   }
 
-/* Form style **************************/
-input {
-	border: solid 1px #00ace6;
-	border-radius: 4px;
-	padding:5px;
-	outline: none;
-}
-
-textarea {
-	width:98.5%;
-	height: 5em;
-	padding: 5px;
-	border: solid 1px #00ace6;
-	border-radius: 4px;
-}
-
-select {
-	border: solid 1px #00ace6;
-	border-radius: 4px;
-	padding: 5px;
-}
-
-fieldset {
-	border: solid 2px #ffb380;
-}
-
-legend {
-	color: #007399;
-	font-size:1.3em;
-	font-weight: 600;
-}
-
-input:focus {
-	background-color: #ffe0cc;
-}
-
-textarea:focus {
-	background-color: #ffe0cc;
-}
-
-input[type=button], input[type=submit], input[type=reset] {
-  background-color: #00ace6;
-  border: none;
-  color: white;
-  padding: 5px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
 /* Interactive Quote ***********************/
 .quote {
     margin-left: auto;
@@ -270,6 +231,9 @@ input[type=button], input[type=submit], input[type=reset] {
     padding: 10px;
     text-align: center;
     border-radius: 15px;
+}
+.quote button {
+    font-weight: 600;
 }
 .accordion {
     margin: none;
@@ -297,6 +261,43 @@ input[type=button], input[type=submit], input[type=reset] {
     transition: max-height 0.2s ease-out;
 }
 
+/* Homepage ********************************/
+#homepage header {
+    margin: 0px;
+    text-align: center;
+    background-image: url(./images/home.jpg);
+    background-size: cover;
+    padding-top: 1em;
+    padding-bottom: 7em;
+}
+#homepage h1 {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+#homepage header p {
+    width: auto;
+    background-color: #00ace6;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    margin: .5em;
+    margin-top: 0px;
+    padding: 1em;
+}
+#homepage #top-button-wrapper {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+#homepage #top-buttons .float-left {
+    float: left;
+}
+#homepage #top-buttons .float-right {
+    float: right;
+}
+
 /* Resume ****************************/
 #resume ul {
     margin-top: 0px;
@@ -320,15 +321,14 @@ footer p {
 }
 @media only screen and (min-width: 768px) {
     /* For desktop: */
-    body {
+    /* body {
         background-image: url(/images/repeating_background.jpg);
-    }
+    } */
     .wrapper {
-        margin: auto;
         width: 60%;
-        border: 5px solid #00ace6;
-        padding: 10px;
-        background-color: white;
+    }
+    #homepage #top-button-wrapper {
+        width: 60%;
     }
 
 }
