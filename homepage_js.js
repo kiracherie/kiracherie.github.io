@@ -15,9 +15,9 @@ for (i = 0; i < acc.length; i++) {
 function addResponsive() {
     console.log("adding responsive class\n")
     var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
+    if (!x.classList.contains('responsive')) {
+        x.classList.add('responsive');
     } else {
-        x.className = "topnav";
+        x.classList.remove('responsive');
     }
 }
