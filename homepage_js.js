@@ -1,3 +1,4 @@
+console.log("homepage js");
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -21,3 +22,4 @@ function addResponsive() {
         x.classList.remove('responsive');
     }
 }
+

@@ -65,8 +65,19 @@ const quotes = [
         author: "Stephen Hawking",
         comment: "But you can get really close to it :)",
     },
-]
+];
+
+// variables
+const quoteBlock = document.querySelector(".quote");
+const accordion = document.querySelector(".accordion");
+const comment = document.querySelector(".panel").firstElementChild;
 
 console.log("inside quotes");
-let randNum = Math.random() * quotes.length;
-console.log("there are", randNum, "many quotes");
+let randNum = Math.floor(Math.random() * quotes.length);
+let selectedQuote = quotes[randNum];
+console.log(selectedQuote);
+console.log(accordion);
+console.log(comment)
+
+accordion.innerHTML = `"${selectedQuote.quote}"<br> - ${selectedQuote.author}`
+comment.innerHTML = `${selectedQuote.comment}`
