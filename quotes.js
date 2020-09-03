@@ -1,3 +1,4 @@
+console.log("inside quotes");
 const quotes = [
     {
         id: 1,
@@ -72,12 +73,8 @@ const quoteBlock = document.querySelector(".quote");
 const accordion = document.querySelector(".accordion");
 const comment = document.querySelector(".panel").firstElementChild;
 
-console.log("inside quotes");
 let randNum = Math.floor(Math.random() * quotes.length);
 let selectedQuote = quotes[randNum];
-console.log(selectedQuote);
-console.log(accordion);
-console.log(comment)
 
 accordion.innerHTML = `"${selectedQuote.quote}"<br> - ${selectedQuote.author}`
 comment.innerHTML = `${selectedQuote.comment}`
