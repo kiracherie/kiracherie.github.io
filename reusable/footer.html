@@ -2,5 +2,9 @@
 
 <p id="copyright">
     760-793-1446 | <a href="mailto:kirapeters@gmail.com">kirapeters@gmail.com</a> | <a href="https://www.linkedin.com/in/kira-peters01/">LinkedIn</a><br>
-    Copyright &copy; 2020, Kira Peters. All rights reserved.
+    Copyright &copy; <span id="year"></span>, Kira Peters. All rights reserved.
 </p>
+
+<script>    
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
